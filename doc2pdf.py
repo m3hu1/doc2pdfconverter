@@ -9,7 +9,7 @@ load_dotenv()
 API_KEY = os.getenv("API_KEY")
 
 if API_KEY is None:
-    raise Exception("API_KEY not found in environment variables")
+    raise Exception("API_KEY not found.")
 
 convertapi.api_secret = API_KEY
 
